@@ -1,0 +1,34 @@
+<idea-plugin>
+    <id>fu.meter.idea.ResetTrial</id>
+    <name>Idea Reset Trial</name>
+    <vendor>米特乐园</vendor>
+
+    <description><![CDATA[
+    I can reset your IDE eval information.<br>
+    <em>Click "Help" menu and select "Rest Idea Trial"</em><br><br>
+    <p>
+        Just for study.Please don't commercialize.
+    </p>
+    <p>
+        企鹅群：426118777 暗号：米特IDEA
+    </p>
+    ]]></description>
+
+    <depends>com.intellij.modules.ultimate</depends>
+
+    <actions>
+        <action class="fu.meter.idea.RestartAction"
+                id="fu.meter.idea.RestartAction"/>
+        <action id="Meter.plugins.idea.active" class="fu.meter.idea.ResetTrial"
+                description="重置试用时间">
+            <add-to-group group-id="HelpMenu" anchor="last"/>
+            <add-to-group group-id="WelcomeScreen.Documentation" anchor="last"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt R" second-keystroke="ctrl M"/>
+        </action>
+    </actions>
+
+    <applicationListeners>
+        <listener class="fu.meter.idea.PluginListener"
+                  topic="com.intellij.ide.plugins.DynamicPluginListener"/>
+    </applicationListeners>
+</idea-plugin>

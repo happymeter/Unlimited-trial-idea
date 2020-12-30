@@ -1,0 +1,46 @@
+plugins {
+    id 'java'
+   // id 'org.jetbrains.intellij' version '0.5.0'
+    id 'org.jetbrains.intellij' version '0.6.5'
+}
+
+group 'fu.meter.idea'
+version '2.1.10'
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+repositories {
+    maven { url "https://maven.aliyun.com/nexus/content/groups/public/" }
+    maven { url 'http://maven.oschina.net/content/groups/public/' }
+    maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
+    maven { url "http://maven.springframework.org/release" }
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+buildPlugin {
+    buildSearchableOptions.enabled = false
+}
+
+// See https://github.com/JetBrains/gradle-intellij-plugin/
+intellij {
+    //version "2020.3"
+    version "2020.2.4"
+   // plugins = ['java']
+    type "IU"
+}
+
+patchPluginXml {
+    changeNotes """<pre>
+Test idea 2020.3 passed @ 2020-12-30.
+   
+</pre>"""
+    sinceBuild "145.258"
+    untilBuild null
+}
+compileJava.options.encoding = 'UTF-8'
+compileTestJava.options.encoding = 'UTF-8'
