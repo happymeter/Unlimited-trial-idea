@@ -6,7 +6,7 @@ I Just copy and modify it.
 
 Useage：
 
-1、build this plugin。Or download zip file;
+1、Build this plugin。Or [click me ](https://github.com/happymeter/Unlimited-trial-idea/releases/download/20201231/Idea.Reset.Trial-20201231.zip) for download zip file;
 
 2、Drag the zip file to you IDEA and restart you ide;
 
