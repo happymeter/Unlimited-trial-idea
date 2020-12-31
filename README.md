@@ -14,6 +14,6 @@ Useage：
 
 ​      Click the Rest button;Click the "Auto reset before per restart" if you want this plugin auto reset the trial licence。
 
-![image-20201230173330002](images\image-20201230173330002.png)
+![image-20201230173330002](https://raw.githubusercontent.com/happymeter/Unlimited-trial-idea/master/images/image-20201230173330002.png)
 
-![image-20201230173506160](images\image-20201230173506160.png)
+![image-20201230173506160](https://raw.githubusercontent.com/happymeter/Unlimited-trial-idea/master/images/image-20201230173506160.png)
